@@ -59,7 +59,17 @@
     .credit_edit {
         margin-top: 20px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+    }
+    
+    .pay {
+        color: #5abe7b;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .pay::after {
+        content: "₴";
     }
     
     .credit_edit img {
