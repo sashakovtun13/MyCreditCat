@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/faqqq.css">
+    <link rel="stylesheet" href="./lib/jquery.fancybox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="./img/cat2.gif" alt="" style="width: 200px; height: auto;     margin-left: calc(50% - 200px/2);">
+    <h1>My Cat Credit</h1>
+    <button class="add_credit">+</button>
+    <div class="centerize">
+        <div class="faq">
+
+            <details>
+                <summary>Телевизор</summary>
+                <div class="credit">
+                    <div class="credit_mouths">
+                        <div class="mouth paid"></div>
+                        <div class="mouth paid"></div>
+                        <div class="mouth"></div>
+                        <div class="mouth"></div>
+                        <div class="mouth"></div>
+                        <div class="mouth"></div>
+                        <div class="mouth"></div>
+                        <div class="mouth"></div>
+                    </div>
+                    <div class="credit_amount">
+                        <div class="p_amount">2800</div>
+                        <div class="a_amount">18000</div>
+                    </div>
+                    <a href="./img/images.jpg" data-fancybox>
+                        <img src="./img/images.jpg" /></a>
+                </div>
+            </details>
+            <details>
+                <summary>Телефон</summary>
+                <div class="credit">
+                    <div class="credit_mouths">
+                        <div class="mouth paid"></div>
+                        <div class="mouth paid"></div>
+                        <div class="mouth"></div>
+                        <div class="mouth"></div>
+                        <div class="mouth"></div>
+                        <div class="mouth"></div>
+                        <div class="mouth"></div>
+                        <div class="mouth"></div>
+                    </div>
+                    <div class="credit_amount">
+                        <div class="p_amount">2800</div>
+                        <div class="a_amount">18000</div>
+                    </div>
+                    <a href="./img/images.jpg" data-fancybox>
+                        <img src="./img/images.jpg" /></a>
+                </div>
+            </details>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./lib/jquery.fancybox.min.js"></script>
+    <script>
+        $('a.gallery').fancybox({
+            'titlePosition': 'inside'
+        });
+    </script>
+</body>
+
+</html>
