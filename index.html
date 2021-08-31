@@ -12,18 +12,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <title>Document</title>
 </head>
 
 <body>
+    <button id="add">Add</button>
+    <button class="add_credit"><a href="#ex1" rel="modal:open">+</a></button>
+    <!-- Modal -->
 
+
+    <div id="ex1" class="modal">
+
+
+
+
+        <a href="#" rel="modal:close"></a>
+    </div>
+
+    <!-- /Modal -->
     <img src="./img/cat2.gif" alt="" style="width: 200px; height: auto;     margin-left: calc(50% - 200px/2);">
     <h1>My Cat Credit</h1>
-    <button class="add_credit">+</button>
+
     <div class="centerize">
         <div class="faq">
 
-            <details>
+            <details id="credit_1">
                 <summary>Телевизор</summary>
                 <div class="credit">
                     <div class="credit_mouths">
@@ -38,33 +52,21 @@
                     </div>
                     <div class="credit_amount">
                         <div class="p_amount">2800</div>
+                        <div class="date">до 28.03.22</div>
                         <div class="a_amount">18000</div>
                     </div>
-                    <a href="./img/images.jpg" data-fancybox>
-                        <img src="./img/images.jpg" /></a>
+                    <div class="credit_edit">
+                        <a href="./img/images.jpg" data-fancybox>
+                            <img src="./img/file.svg" /></a>
+                        <img src="./img/edit.svg" alt="">
+                        <img src="./img/delete.svg" alt="">
+
+                    </div>
+
+
                 </div>
             </details>
-            <details>
-                <summary>Телефон</summary>
-                <div class="credit">
-                    <div class="credit_mouths">
-                        <div class="mouth paid"></div>
-                        <div class="mouth paid"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                    </div>
-                    <div class="credit_amount">
-                        <div class="p_amount">2800</div>
-                        <div class="a_amount">18000</div>
-                    </div>
-                    <a href="./img/images.jpg" data-fancybox>
-                        <img src="./img/images.jpg" /></a>
-                </div>
-            </details>
+
         </div>
     </div>
 
@@ -76,6 +78,8 @@
             'titlePosition': 'inside'
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>

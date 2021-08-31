@@ -19,6 +19,8 @@
     .credit {
         width: 95%;
         margin: 0 auto;
+        padding-bottom: 33px;
+        border-bottom: 2px solid white;
     }
     
     .credit_mouths {
@@ -54,11 +56,16 @@
         color: #c2c2c2;
     }
     
-    img {
-        width: 50px;
-        height: 50px;
-        margin-left: calc(50% - 50px/2);
-        border-radius: 100px;
+    .credit_edit {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .credit_edit img {
+        width: 30px;
+        height: 30px;
+        margin: 0 3px 0 3px;
     }
     
     .fancybox-image,
@@ -69,9 +76,17 @@
     .add_credit {
         width: 100%;
         height: 100Px;
-        color: #518b88;
         position: fixed;
         bottom: 0;
         background: transparent;
         font-size: 50px;
+        border: none;
     }
+    
+    .add_credit a {
+        text-decoration: none;
+        color: #518b88;
+    }
+    /* .blocker {
+        pointer-events: none;
+    } */
