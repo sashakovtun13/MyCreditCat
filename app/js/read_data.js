@@ -13,7 +13,7 @@ function showData(open_id) {
     // let empty = `<img src="./app/img/empty.png" alt="" class="empty">
     // <button class="bottom_btn add_credit">+</button>`;
     // $(".faq").html(empty);
-    $.getJSON("../../data.json", function(data) {
+    $.getJSON("./data.json", function(data) {
         // console.log(data);
         console.log(data.length);
         if (data.length > 0) {
