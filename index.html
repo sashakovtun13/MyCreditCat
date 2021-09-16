@@ -1,107 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/faqqq.css">
-    <link rel="stylesheet" href="./lib/jquery.fancybox.min.css">
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <title>Document</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./app/css/reset.css">
+    <link rel="stylesheet" href="./app/css/style.css">
+    <link rel="stylesheet" href="./app/css/open_list.css">
+
+    <title>My Credit 2.0</title>
 </head>
 
 <body>
-
-    <button class="add_credit"><a href="#ex1" rel="modal:open">+</a></button>
-    <!-- Modal -->
-
-
-    <div id="ex1" class="modal">
-
-
-
-
-        <a href="#" rel="modal:close"></a>
-    </div>
-
-    <!-- /Modal -->
-    <img src="./img/cat2.gif" alt="" style="width: 200px; height: auto;     margin-left: calc(50% - 200px/2);">
-    <h1>My Cat Credit</h1>
-
+    <img src="./app/img/cat2.gif" alt="" style="width: 200px; height: auto;     margin-left: calc(50% - 200px/2);">
+    <h1 id="header_title">Все кредиты</h1>
     <div class="centerize">
         <div class="faq">
 
-            <details id="credit_1">
-                <summary>Телевизор</summary>
-                <div class="credit">
-
-                    <div class="credit_mouths">
-                        <div class="mouth paid"></div>
-                        <div class="mouth paid"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                        <div class="mouth"></div>
-                    </div>
-                    <div class="credit_amount">
-                        <div class="p_amount">2800</div>
-                        <div class="date">до 28.03.22</div>
-                        <div class="a_amount">18000</div>
-                    </div>
-                    <div class="credit_edit">
-                        <h2 class="pay">1400</h2>
-                        <div>
-                            <a href="./img/images.jpg" data-fancybox>
-                                <img src="./img/file.svg" /></a>
-                            <img src="./img/edit.svg" alt="">
-                            <img src="./img/delete.svg" alt="">
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-            </details>
-
         </div>
     </div>
-
-
+    <!-- libs -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="./lib/jquery.fancybox.min.js"></script>
-    <script>
-        $('a.gallery').fancybox({
-            'titlePosition': 'inside'
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <script src="./script/script.js"></script>
+    <!-- scripts -->
+    <script src="./app/js/script.js"></script>
+    <!-- functions -->
+    <script src="./app/js/read_data.js"></script>
+    <script src="./app/js/create.js"></script>
+    <script src="./app/js/delete.js"></script>
+
 </body>
 
 </html>
